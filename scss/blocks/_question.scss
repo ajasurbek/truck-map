@@ -1,0 +1,196 @@
+.question__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    padding-bottom: 50px;
+    padding-top: 125px;
+    text-transform: uppercase;
+    color: #1E2E3D;
+}
+
+.question__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.question__item {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background: #E5E5E5;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+}
+.question__item:last-child {
+    margin: 0;
+}
+.question__title {
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 50px;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #1E2E3D;
+}
+.question__text {
+    width: 238px;
+    font-style: normal;
+    padding-left: 30px;
+    font-weight: 500;
+    margin-bottom: 45px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+.question__box-yellow {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    bottom: -40px;
+    z-index: 1;
+    right: -30px;
+    background: rgba(238, 206, 33, 0.7);
+    border-radius: 50%;
+}
+.question__box-image-view {
+    position: absolute;
+    left: -40px;
+    bottom: 50px;
+}
+.question__box-image-comfortable {
+    position: absolute;
+    left: 12px; 
+    top: -15px;
+}
+.question__box-image-truth {
+    position: absolute;
+    left: -5px;
+    bottom: 50px;
+}
+
+@media screen and (max-width: 1335px) {
+    .question__heading {
+        font-size: 35px;
+        line-height: 45px;
+        padding-top: 100px;
+    } 
+    .question__title {
+        padding-top: 45px;
+        font-size: 22px;
+        padding-left: 26px;
+        padding-bottom: 45px;
+        line-height: 28px;
+    }
+    .question__item {
+        width: 390px;
+        margin-right: 45px;
+    }
+}
+// @media screen and (max-width: 1292px)  {
+
+//     .question__item {
+//         width: 360px;
+//         margin-bottom: 30px;
+//         margin-right: 45px;
+//     }
+//     .question__box-image-view {
+//         left: -20px;
+//         bottom: 28px;
+//     }
+// }
+@media screen and (max-width: 1292px)  {
+    .question__item {
+        margin-bottom: 30px;
+        margin-right: 45px;
+    }
+    .question__list {
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .question__heading {
+        margin-left: 70px;
+    } 
+}
+@media screen and (max-width: 1140px) {
+    .question__heading {
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .question__heading {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 900px)  {
+    .question__heading {
+        padding-top: 75px;
+        text-align: center;
+    } 
+    .question__item {
+        margin: 0;
+        padding: 0;
+        width: 450px;
+        margin-bottom: 40px;
+    }
+    .question__list {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .question__item {
+        width: 400px;
+    }
+    .question__heading {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .question__heading {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .question__item {
+        width: 370px;
+    }
+    .question__text {
+        width: 228px;
+    }
+    .question__box-image {
+        display: none;
+    }
+    .question__box-yellow {
+        background: rgba(238, 206, 33, 0.4);
+    }
+    .question__title {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .question__text {
+        width: 268px;
+        padding-left: 30px;
+        margin-bottom: 45px;
+    }
+}
+@media screen and (max-width: 365px) {
+    .question__heading {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .question__item {
+        width: 340px;
+    }
+    .question__box-yellow {
+        background: rgba(238, 206, 33, 0.2);
+    }
+}

@@ -1,0 +1,535 @@
+// .form {
+//     padding-top: 110px;
+//     padding-bottom: 110px;
+//     background-color: #fff;
+// }
+.form__container {
+    display: flex;
+}
+.form__left-section {
+    margin-right: 50px;
+}
+.form__heading {
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 45px;
+    font-size: 37px;
+    line-height: 45px;
+    text-transform: uppercase;
+    width: 700px;
+    color: #000000;
+}
+.form__section {
+    display: flex;
+    margin-top: 70px;
+}
+.form__left {
+    display: flex;
+    margin-right: 50px;
+    flex-direction: column;
+}
+.form__right {
+    display: flex;
+    flex-direction: column;
+}
+.input__form {
+    margin: 0;
+    padding: 0;
+    background: #F1F1F1;
+    border: none;
+    outline: none;
+    width: 325px;
+    height: 35px;
+    color: linear-gradient(90deg, #283745 0%, #152331 100%);
+    border: 1px solid transparent;
+    border-radius: 18px;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+// ================
+.checkbox-label {
+    margin-top: 45px;
+}
+ .check_form-input {
+	cursor: pointer;
+}
+.check_form-input {
+	margin: 0;
+	max-width: 100%;
+	height: auto;	
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: #1b1b1b;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	   		appearance: none;
+	border: .08em solid #4F4F4F;
+}
+
+/* End reset for the demo */
+
+
+.check_form-input[type="checkbox"],
+.check_form-input[type="radio"] {
+	width: 20px; height: 20px;
+}	
+.check_form-input[type="radio"] {	
+	border-radius: 50%;
+}
+.check_form-input[type="checkbox"]:checked,
+.check_form-input[type="radio"]:checked {
+	background-image: url("data:image/svg+xml,%3Csvg height='32' width='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m11.4 21.5-5.93-5.93-2.01 2.01 7.94 7.94 17.1-17.1-2.01-2.01z' fill='%23fff'/%3E%3C/svg%3E");
+	background-size: 80% 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #283745;
+	border-color: #283745;
+}
+
+// ================
+
+
+.input__where-first {
+    background-image: url("../../img/location-form.svg");
+    background-position:  left calc(2px + 9px) center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.input__where-second {
+    background-image: url("../../img/flag-form.svg");
+    background-position:  left calc(2px + 9px) center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.input__type {
+    background-image: url("../../img/type-form.svg");
+    background-position:  left calc(2px + 9px) center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.input__tel {
+    background-image: url("../../img/number-form.svg");
+    background-position:  left calc(2px + 9px) center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.input__date {
+    border: none;
+    outline: none;
+    width: 350px;
+    height: 35px;
+    margin-top: 34px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input__date {
+    background-color:  #152331;
+    background-image: url("../../img/clock-left.svg");
+    background-position:  left calc(2px + 9px) center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    margin-bottom: 34px;
+}
+
+.select__transport-form {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background:  #152331;
+    color: white;
+    border-radius: 18px;
+    width: 325px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    height: 35px;
+    padding-top: 14px;
+    padding-bottom: 26px;
+    
+}
+.delete__btn {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-left: 200px;
+    background-image: url('../../img/cancel.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    color: rgba(255, 255, 255, 0);
+    opacity: 1;
+    display: block;
+    background: url("../../img/clock-right.svg") no-repeat;
+    background-position: right calc(2px + 9px) center;
+    background-size: 20px 20px;
+    border-width: thin;
+}
+
+
+
+// ==============================
+
+.select_a {
+    padding-left: 5px;
+    padding-right: 5px;  
+    display: none;
+    width: 350px;
+    position: absolute;
+    top: 0;
+    height: 450px;
+    margin-right: auto;
+    padding-top: 15px;
+    margin-left: auto;
+    background-color: #152331;
+}
+
+.select__active {
+    display: block;
+}
+.slider__about {
+    color: white;
+}
+.slider__wrapper {
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+}
+
+.form__slider-img {
+    max-width: 220px;
+    max-height: 220px;
+}
+
+.carousel {
+    height: 450px;
+    width: 220px;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.slider__text {
+    color: #EECE21;
+}
+
+.btn__left {
+    margin-right: 22px;
+    background-image: url('../../img/arrowleft.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.btn__right {
+    margin-left: 22px;
+    background-image: url('../../img/right-arrowright.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.btn:focus {
+    outline: none;
+}
+// ============================================
+
+
+.form__btn-tarif {
+    display: inline-block;
+    margin-top: 34px;
+    border-radius: 18px 18px 18px 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+
+
+    background-color: #152331;
+    border: none;
+    outline: none;
+    color: white;
+    height: 40px;
+    width: 350px;   
+    text-align: center;
+    cursor: pointer;
+}
+.tarif__wrapper {
+    position: relative;
+}
+.form__tarif-wrapper {
+    display: flex;
+    font-size: 20px;
+    position: absolute;
+    z-index: 655;
+    width: 350px;
+    display: none;
+    background:  #152331;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarif__active {
+    display: flex;
+}
+.btn__radius {
+    border-radius: 18px 18px 0px 0px;
+}
+.form__condition {
+    margin-top: 45px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.2993px;
+    line-height: 25px;
+    text-decoration-line: underline;
+}
+
+
+
+
+
+
+.containers {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containers input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+
+
+/* When the checkbox is checked, add a blue background */
+.containers input:checked ~ .checkmark {
+    background-color: #152331;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containers input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containers .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+@media screen and (max-width: 1390px) {
+    .form__left-section {
+        margin-right: 25px;
+    }
+}
+@media screen and (max-width: 1370px) {
+    .form__left-section {
+        margin-right: 25px;
+    }
+    .form__right-section {
+        max-width: 450px;
+    }
+}
+@media screen and (max-width: 1260px) {
+    
+    .form__right-section {
+        display: none;
+    }
+    // .form {
+    //     display: none;
+    // }
+    // .form__heading {
+    //     display: none;
+    // }
+    .form__section {
+        display: flex;
+    }
+    .form__left {
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .form__left {
+        margin-right: 150px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .form__left {
+        margin-right: 100px;
+    }
+}
+@media screen and (max-width: 830px) {
+   
+ .form__left-section {
+     margin: 0;
+ } 
+}
+@media screen and (max-width: 780px) {
+    .form__section {
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+    }
+     .form__left {
+        margin: 0;
+    }
+    .form__heading {
+        text-align:center;
+    }
+    .form__right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form__left {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .form__heading {
+        font-size: 35px;
+        line-height: 50px;
+        width: 600px;
+    }
+}
+@media screen and (max-width: 635px) {
+    .form__heading {
+        font-size: 28px;
+        line-height: 42px;
+        width: 500px;
+    }
+    .form {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .form__heading {
+        font-size: 24px;
+        line-height: 35px;
+        width: 340px;
+    }
+    .form__section {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .form__heading {
+        font-size: 24px;
+        line-height: 34px;
+        width: 280px;
+    }
+    .input__form {
+        width: 280px;
+        padding-left: 40px;
+    }
+    .select__transport-form {
+        width: 280px;
+        height: 35px;
+        padding-top: 14px;
+        padding-bottom: 26px;
+    }
+    .form__condition {
+        margin-top: 25px;
+    }
+    .form__btn-tarif {
+        margin-top: 25px;
+        width: 280px;
+        height: 35px;
+        padding-top: 14px;
+        padding-bottom: 26px;
+    }
+    .input__date {
+        width: 280px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .form__heading {
+        font-size: 22px;
+        line-height: 34px;
+        width: 295px;
+        margin-left: 0;
+        margin-right: 0;
+    } 
+}

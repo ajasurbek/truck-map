@@ -1,0 +1,195 @@
+.footer {
+    background: #1A2836;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.footer__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+    color: #EECE21;
+    margin-bottom: 30px;
+}
+.footer__icon::before {
+    content: "";
+    width: 19px;
+    height: 10px;
+    margin-left: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon__location {
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/location.svg");
+}
+.icon__headphone {
+    background-repeat: no-repeat;
+    background-image: url('../../img/headphone.svg');
+}
+.icon__workingdays {
+    background-repeat: no-repeat;
+    background-image: url('../../img/clock.svg');
+}
+.icon__email {
+    background-repeat: no-repeat;
+    background-image: url('../../img/message.svg');
+}
+.footer__address {
+    font-style: normal;
+    font-weight: 500;
+    padding-top: 3px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.footer__support {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #FFFFFF; 
+}
+.footer__support-phone {
+    color: #EECE21;
+}
+.footer__workingdays {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.workingdays-yellow {
+    color: #EECE21;
+}
+.footer__mobile-wrapper {
+    display: none;
+}
+.foooter__email {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #EECE21;
+}
+.footer__second-col {
+    display: flex;
+}
+.footer__first-column {
+    display: flex;
+}
+.footer__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 19px;
+    color: #FFFFFF;
+}
+.footer__first-right {
+    margin-left: 110px;
+}
+.footer__second-right {
+    margin-left: 110px;
+}
+
+@media screen and (max-width: 1300px) {
+    .footer__first-right {
+        margin-left: 60px;
+    }
+    .footer__second-right {
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 1164px) {
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__first-right {
+        margin: 0;
+    }
+    .footer__second-right {
+        margin: 0;
+    }
+    .footer__first-column {
+        justify-content: space-between;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 80px;
+    }
+    .footer__second-col {
+        padding-left: 30px;
+        padding-right: 50px;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 795px) {
+    .footer__first-column {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .footer__second-col {
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width: 745px) {
+    .footer__first-right {
+        display: none;
+    }
+    .footer__second-left {
+        display: none;
+    }
+}
+@media screen and (max-width: 545px) {
+   .footer__second-right {
+       display: none;
+   }
+    .footer__mobile-wrapper {
+        display: block;
+    }
+    .footer__mobile-list-social {
+        display: flex;
+    }
+    .footer__mobile-item-social {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media screen and (max-width: 458px) {
+    .footer__mobile-item-social {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width: 415px)  {
+    .footer__first-column {
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 378px) {
+    .footer__mobile-item-social {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+@media screen and (max-width: 338px) {
+    .footer__mobile-item-social {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}
+
