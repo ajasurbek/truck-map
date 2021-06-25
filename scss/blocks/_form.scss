@@ -202,6 +202,10 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 }
 
 .select__active {
+ display: none;
+}
+
+.select__active {
     display: block;
 }
 .slider__about {
@@ -212,6 +216,9 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     padding-left: 5px;
     padding-right: 5px;
     align-items: center;
+}
+.slider__wrapper {
+    display: none;
 }
 
 .form__slider-img {

@@ -607,7 +607,7 @@ input[type="submit"] {
 .bag__select-transport {
   width: 325px;
   height: 40px;
-  border-radius: 40px;
+  border-radius: 18px;
   background: url(../../img/clock.svg) no-repeat 6% center #152331;
   background-size: 16px !important;
   display: -webkit-box;
@@ -630,7 +630,7 @@ input[type="submit"] {
   width: 325px;
   height: 40px;
   padding: 10px 40px;
-  border-radius: 40px;
+  border-radius: 18px;
   background: url(../../img/clock-left.svg) no-repeat 6% center #152331;
   background-size: 16px !important;
   display: -webkit-box;
@@ -654,7 +654,7 @@ input[type="submit"] {
   width: 325px;
   height: 40px;
   padding: 10px 40px;
-  border-radius: 40px;
+  border-radius: 18px;
   background: url(../../img/clock-left.svg) no-repeat 6% center #152331;
   background-size: 16px !important;
   display: -webkit-box;
@@ -687,6 +687,7 @@ input[type="submit"] {
   border-bottom-right-radius: 15px;
 }
 
+
 .select_date_block2 {
   position: absolute;
   top: 29px;
@@ -707,6 +708,10 @@ input[type="submit"] {
   font-family: Montserrat-Regular, sans-serif;
   letter-spacing: 1px;
   font-size: 14px;
+  width: 350px;
+  height: 40px;
+  padding: 14px 0;
+padding-left: 15px;
   color: white;
   font-style: normal;
   font-weight: 500;
@@ -795,11 +800,11 @@ input[type="submit"] {
   background-size: 18px !important;
 }
 
-.filter_block3_left .select_timeee.active1 {
-  width: 325px;
-  padding-left: 60px;
-  z-index: 9999;
-}
+// .filter_block3_left .select_timeee.active1 {
+//   width: 325px;
+//   padding-left: 60px;
+//   z-index: 9999;
+// }
 .bag-filter_block3_top {
   color: #233240;
   position: relative;
@@ -826,6 +831,7 @@ input[type="submit"] {
 }
 
 .pojelaniya {
+  color: white;
   width: 100%;
   display: none;
 }
@@ -1161,7 +1167,7 @@ input[type="submit"] {
 
 .filter_block3 .block_select_pickap {
   position: absolute;
-  top: 38px;
+  top: 29px;
   left: 0;
   width: 0;
   height: 200px;
@@ -1172,6 +1178,7 @@ input[type="submit"] {
   transition: width 0.3s ease;
   z-index: 9999;
   border-radius: 0;
+  border-radius: 0 0 18px 18px;
 }
 
 .open_pickup_menu {
@@ -1187,7 +1194,7 @@ input[type="submit"] {
 .active1 {
   -moz-border-radius-bottomleft: 0;
   -moz-border-radius-bottomright: 0;
-  border-radius: 15px 15px 0 0;
+  border-radius: 18px 18px 0 0;
 }
 
 .select_timeee.active1 i {
@@ -3211,9 +3218,7 @@ label:hover:before {
 
 
 
-  .select_model {
-      display: none;
-  }
+ 
 
   .select_date_block {
       z-index: 99999;

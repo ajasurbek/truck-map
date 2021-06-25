@@ -8,9 +8,7 @@ async function getTariff() {
     tariffs.Response.Items.forEach((tariff, i) => {
         document.querySelector('.slider_pickup').innerHTML +=
             `<div class="item">
-                <div class="slider_slider_block  cars" data-language="uz"
-                     data-options='${JSON.stringify(tariff.Tarif)}'
-                     data-id=${tariff.Id} data-current=${i}>
+                <div class="slider_slider_block  cars">
                     <div class="for_img_pickup" data-current=${i}>
                         <div class="img_pickup">
                             <img src=${IMG_URL + tariff.rasmi} data-current=${i}>
@@ -20,7 +18,7 @@ async function getTariff() {
                         </div>
                     </div>
                     <!-- Blocks For Send Text pickapp list  -->
-                    <div class="text_list_for_pic" style="display: none;">
+                    <div class="text_list_fo    r_pic" style="display: none;">
                         <p>${tariff.izox}</p>
                     </div>
                     <!-- Price number Tarif -->
@@ -30,7 +28,12 @@ async function getTariff() {
                 </div>
             </div>
             `
+            let as = document.querySelector('.slider_slider_block')
+            as.addEventListener('click', function() {
+                console.log(i)
+            })
     })
 }
 
 getTariff();
+

@@ -3,14 +3,13 @@ $(document).ready(function () {
 
     $('body').on('click', function (event) {
         if (event.target.className == "bag-filterr" || event.target.className == "bag-inside_filter" || event.target.className == "filter_block4" ||
-            event.target.className == "bag-filter_calc_block") {
+            event.target.className == "filter_calc_block") {
             $('.select_date_block2').slideUp();
         }
     })
     $('body').on('click', function (event) {
         if (
             typeof event.target.className === 'object' ||
-            event.target.className === "block_pickapp_info_bottom" ||
             event.target.className === "select_model" ||
             event.target.className === "button_for_pickup" ||
             event.target.className === "arrow_left" ||
@@ -32,16 +31,7 @@ $(document).ready(function () {
         $(this).toggleClass('check_box_show');
         $(this).parent().find('.checkk').click();
     });
-
-    // PRELOADER
-    window.onload = function () {
-        $('.preloaderr').addClass('remove_preloader');
-        $('.slide_one2').css('opacity', '1');
-    };
-
-    $('.calme_form form').on('submit', function () {
-        $('.call_me').removeClass('open_call_me');
-    });
+ 
 
     // TARIFLARDAN birini tanlaganda
     $('body').on('click', '.select_tarif', function () {
@@ -136,9 +126,9 @@ $(document).ready(function () {
         $('.timeee').val(minute + '' + hour);
     });
     $('.svg').click(function () {
-        var adress1 = $('.bag-adresss1').val();
+        var adress1 = $('.adresss1').val();
         var adress2 = $('.adresss2').val();
-        $('.bag-adresss1').val(adress2);
+        $('.adresss1').val(adress2);
         $('.adresss2').val(adress1);
         changedOrig()
 
@@ -179,7 +169,7 @@ $(document).ready(function () {
 
     $('.pojelaniya .select_timeee2').click(function () {
         $('.pojelaniya .select_timeee2').toggleClass('active1');
-        $('.select_date_block2').slideToggle('');
+        $('.select_date_block2').slideToggle();
     });
 
     // **********************************************************************************************************
@@ -189,7 +179,7 @@ $(document).ready(function () {
     $('.filter_info3').click(function (event) {
         // alert('.qwewqe');
         var marshrut = $('.ymaps-2-1-72-route-panel-input__input').val();
-        var adress1 = $('.bag-adresss1').val();
+        var adress1 = $('.adresss1').val();
         var adress2 = $('.adresss2').val();
         $('.kuda').val(adress1);
         $('.otkuda').val(adress2);
@@ -197,7 +187,7 @@ $(document).ready(function () {
 
 
     $('body').click(function (e) {
-        if (e.target.className == 'bag-filterr' || e.target.className == 'bag-inside_filter') {
+        if (e.target.className == 'filterr' || e.target.className == 'inside_filter') {
             $('.select_date_block').slideUp();
         }
     });
@@ -257,6 +247,8 @@ $(document).ready(function () {
             }
 
         });
+// ============================
+
 
 
         // *******************************************************
@@ -264,7 +256,7 @@ $(document).ready(function () {
 
         var gazelname = $(this).find('.name_pickup p').text();
         var gazelid = $(this).attr('data-id');
-
+console.log(gazelname)
         $('.select_timeee .name_gazel').text(gazelname);
 
         $('.block_select_pickap').fadeOut('fast', function () {
@@ -302,7 +294,9 @@ $(document).ready(function () {
     });
 
     $('.slick-arrow').click(function () {
+        console.log('sad')
         var namepickapp = $(this).parent().find('.name_pickup p').text();
+        console.log(namepickapp)
         var infotarif = $(this).parent().find('.text_list_for_pic p').text();
         //$('.text_name_pickapp span').text(namepickapp);
         $('.info_tarif_pick ul li p').text(infotarif);
