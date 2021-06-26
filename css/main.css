@@ -4239,7 +4239,7 @@ input[type="submit"] {
   padding: 10px 25px;
   color: #fff;
   background-color: #152331;
-  border-radius: 18px;
+  border-radius: 40px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -4270,7 +4270,7 @@ input[type="submit"] {
 }
 
 .select_date_block input {
-  border-radius: 18px;
+  border-radius: 40px;
   color: #192734;
   width: 100%;
   margin: 8px auto;
@@ -4298,7 +4298,7 @@ input[type="submit"] {
 
 .select_date_block .select_btn {
   width: 100%;
-  border-radius: 18px;
+  border-radius: 40px;
   display: block;
   background: transparent;
   color: #f7f7f7;
@@ -5597,7 +5597,7 @@ label:hover:before {
   }
   .btn_slct_pickapp {
     padding: 15px 25px;
-    border-radius: 18px;
+    border-radius: 40px;
     background: #2b368f;
     color: #fff;
   }

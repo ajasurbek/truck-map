@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
     $('body').on('click', function (event) {
-        if (event.target.className == "bag-filterr" || event.target.className == "bag-inside_filter" || event.target.className == "filter_block4" ||
+        if (event.target.className == "filterr" || event.target.className == "inside_filter" || event.target.className == "filter_block4" ||
             event.target.className == "filter_calc_block") {
             $('.select_date_block2').slideUp();
         }
@@ -10,6 +10,7 @@ $(document).ready(function () {
     $('body').on('click', function (event) {
         if (
             typeof event.target.className === 'object' ||
+            event.target.className === "block_pickapp_info_bottom" ||
             event.target.className === "select_model" ||
             event.target.className === "button_for_pickup" ||
             event.target.className === "arrow_left" ||
@@ -31,7 +32,16 @@ $(document).ready(function () {
         $(this).toggleClass('check_box_show');
         $(this).parent().find('.checkk').click();
     });
- 
+
+    // PRELOADER
+    window.onload = function () {
+        $('.preloaderr').addClass('remove_preloader');
+        $('.slide_one2').css('opacity', '1');
+    };
+
+    $('.calme_form form').on('submit', function () {
+        $('.call_me').removeClass('open_call_me');
+    });
 
     // TARIFLARDAN birini tanlaganda
     $('body').on('click', '.select_tarif', function () {
@@ -247,8 +257,6 @@ $(document).ready(function () {
             }
 
         });
-// ============================
-
 
 
         // *******************************************************
@@ -256,7 +264,7 @@ $(document).ready(function () {
 
         var gazelname = $(this).find('.name_pickup p').text();
         var gazelid = $(this).attr('data-id');
-console.log(gazelname)
+
         $('.select_timeee .name_gazel').text(gazelname);
 
         $('.block_select_pickap').fadeOut('fast', function () {
@@ -294,10 +302,10 @@ console.log(gazelname)
     });
 
     $('.slick-arrow').click(function () {
-        console.log('sad')
+        
         var namepickapp = $(this).parent().find('.name_pickup p').text();
-        console.log(namepickapp)
         var infotarif = $(this).parent().find('.text_list_for_pic p').text();
+        
         //$('.text_name_pickapp span').text(namepickapp);
         $('.info_tarif_pick ul li p').text(infotarif);
     }, function () {
