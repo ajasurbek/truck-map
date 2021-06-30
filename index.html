@@ -744,14 +744,14 @@ elChange.addEventListener("click", function() {
           swal("Xato!", "Vaqtni tanlang!", "error");
           isSuccess = false
         }
-        // if (car_type_id === "") {
-        //   swal("Xato!", "Transportni tanlang!", "error");
-        //   isSuccess = false
-        // }
-        // if (tarif_id === "") {
-        //   swal("Xato!", "Tarifni tanlang!", "error");
-        //   isSuccess = false
-        // }
+        if (car_type_id === "") {
+          swal("Xato!", "Transportni tanlang!", "error");
+          isSuccess = false
+        }
+        if (tarif_id === "") {
+          swal("Xato!", "Tarifni tanlang!", "error");
+          isSuccess = false
+        }
         if (yuk_turi === "") {
           swal("Xato!", "Yuk turini yozmadingiz!", "error");
           isSuccess = false

@@ -3026,15 +3026,11 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
   display: flex;
 }
 
-.footer__img-icon {
-  margin-right: 8px;
-}
-
 .footer__link {
-  font-style: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
