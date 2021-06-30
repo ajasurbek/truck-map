@@ -892,7 +892,7 @@ header {
 
 @media screen and (max-width: 770px) {
   .intro__heading {
-    max-width: 277px;
+    max-width: 279px;
     font-size: 35px;
     line-height: 48px;
     margin-left: auto;
