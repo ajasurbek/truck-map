@@ -1,4 +1,4 @@
-$(document).ready(function () {
+// $(document).ready(function () {
 
 
     $('body').on('click', function (event) {
@@ -135,18 +135,8 @@ $(document).ready(function () {
         });
         $('.timeee').val(minute + '' + hour);
     });
-    $('.svg').click(function () {
-        var adress1 = $('.adresss1').val();
-        var adress2 = $('.adresss2').val();
-        $('.adresss1').val(adress2);
-        $('.adresss2').val(adress1);
-        changedOrig()
-
-        // muhim emas udalit nomi
-        $('.kuda').val(adress2);
-        $('.otkuda').val(adress1);
-
-    });
+    
+   
     $('.select_btn').click(function () {
         var date = $('#datepicker').val();
         var time = $('#tim').val();
@@ -358,13 +348,13 @@ $(document).ready(function () {
 
     // Hambureger
     // Look for .hamburger
-    var hamburger = document.querySelector(".hamburger");
-    // On click
-    hamburger.addEventListener("click", function () {
-        // Toggle class "is-active"
-        hamburger.classList.toggle("is-active");
-        // Do something else, like open/close menu
-    });
+    // var hamburger = document.querySelector(".hamburger");
+    // // On click
+    // hamburger.addEventListener("click", function () {
+    //     // Toggle class "is-active"
+    //     hamburger.classList.toggle("is-active");
+    //     // Do something else, like open/close menu
+    // });
 
 
     $('.hamburger').click(function () {
@@ -592,7 +582,7 @@ $(document).ready(function () {
                 ;
         }
     });
-});
+// });
 
 
 $('.brand-carousel').owlCarousel({

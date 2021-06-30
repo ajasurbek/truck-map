@@ -304,7 +304,7 @@
   
                   <div class="bag-change_btn">
                     <div class="svg">
-                      <img class="bag_img-arrow" src="img/arrow-form.svg" alt="">
+                      <img class="bag_img-arrow" src="img/arrow-form.svg" alt="arrow">
                     </div>
                   </div>
   
@@ -365,9 +365,9 @@
                                data-id=${tariff.Id} data-current=${i}>
                               <div class="for_img_pickup" data-current=${i}>
                                   <div class="img_pickup">
-                                      <img src=${IMG_URL + tariff.rasmi} data-current=${i}>
+                                      <img src='https://picsum.photos/id/237/200/300' data-current=${i}>
                                           <div class="name_pickup text-center" data-current=${i}>
-                                              <p data-current=${i}>${tariff.Name}</p>
+                                              <p data-current=${i}>Boshqa moshina</p>
                                           </div>
                                   </div>
                               </div>
@@ -393,7 +393,7 @@
                           </svg>
                         </div>
                       </div>
-                      <!-- <div class="block_pickapp_info">
+                      <div class="block_pickapp_info">
                         <div class="block_pickapp_info_bottom">
                           <div class="info_tarif_pick">
                             <ul>
@@ -403,7 +403,7 @@
                             </ul>
                           </div>
                         </div>
-                      </div> -->
+                      </div>
                     </div>
                   </div>
                   <div class="select_time">
@@ -606,21 +606,17 @@
           </h4>
           <ul class="footer__list-social">
             <li class="footer__item-social icon__facebook">
-              <a class="footer__link-icon" href="#"><img class="footer__img-icon" src="img/facebook.svg" alt="icon"></a>
-              <a class="footer__link-social footer__link" href="#">@truck.uz</a>
+              <a class="footer__link-social footer__link" href="#"><img class="footer__img-icon" src="img/facebook.svg" alt="icon">@truck.uz</a>
             </li>
             <li class="footer__item-social icon__instagram">
-              <a class="footer__link-icon" href="#"><img class="footer__img-icon" src="img/instagram.svg"
-                  alt="icon"></a>
-              <a class="footer__link-social footer__link" href="#">@truck_uz</a>
+              <a class="footer__link-social footer__link" href="#"><img class="footer__img-icon" src="img/instagram.svg"
+                alt="icon">@truck_uz</a>
             </li>
             <li class="footer__item-social icon__telegram">
-              <a class="footer__link-icon" href="#"><img class="footer__img-icon" src="img/telegram.svg" alt="icon"></a>
-              <a class="footer__link-social footer__link" href="#">@truck_uz</a>
+              <a class="footer__link-social footer__link" href="#"><img class="footer__img-icon" src="img/telegram.svg" alt="icon">@truck_uz</a>
             </li>
             <li class="footer__item-social icon__author">
-              <a class="footer__link-icon" href="#"><img class="footer__img-icon" src="img/author.svg" alt="icon"></a>
-              <a class="footer__link-social footer__link" href="#">2021 - truckuz</a>
+              <a class="footer__link-social footer__link" href="#"><img class="footer__img-icon" src="img/author.svg" alt="icon">2021 - truckuz</a>
             </li>
           </ul>
         </div>
@@ -633,7 +629,7 @@
   </footer> <!-- End of footer -->
 
   <!-- ============================================== -->
-
+<div class="so"></div>
 
 
 
@@ -642,6 +638,22 @@
 
 
   <!-- ======================= -->
+  <script>
+let elChange = document.querySelector('.bag_img-arrow')
+elChange.addEventListener("click", function() {
+    var adress1 = $('.bag-adresss1').val();
+    var adress2 = $('.adresss2').val();
+    $('.bag-adresss1').val(adress2);
+    $('.adresss2').val(adress1);
+    changedOrig()
+
+    // muhim emas udalit nomi
+    $('.kuda').val(adress2);
+    $('.otkuda').val(adress1);
+})
+
+    
+  </script>
   <script src="my/main.js"></script>
   <script src="js/main.js"></script>
  
@@ -675,6 +687,7 @@
   <script src="js/contact_map.js"></script>
 
   <script>
+   
     $(function () {
       $("#datepicker").datepicker({
         minDate: new Date()

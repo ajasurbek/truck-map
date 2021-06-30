@@ -176,3 +176,4 @@ ymaps.ready(function () {
     });
     
 });
+

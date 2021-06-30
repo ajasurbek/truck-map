@@ -18,51 +18,51 @@ header.classList.remove("header--nojs")
 
 
 
-let elBtnDel = document.querySelector('.delete__btn') 
-let elSelect = document.querySelector('.select')
-let elButton = document.querySelector('.select__transport-form')
-elBtnDel.addEventListener('click', () => {
-    elSelect.classList.toggle('select__active');
-});
-elButton.addEventListener('click', () => {
-    elSelect.classList.toggle('select__active');
-});
+// let elBtnDel = document.querySelector('.delete__btn') 
+// let elSelect = document.querySelector('.select')
+// let elButton = document.querySelector('.select__transport-form')
+// elBtnDel.addEventListener('click', () => {
+//     elSelect.classList.toggle('select__active');
+// });
+// elButton.addEventListener('click', () => {
+//     elSelect.classList.toggle('select__active');
+// });
 
 
 
-let elBtnTarif = document.querySelector('.form__btn-tarif')
-let elTarifWrapper = document.querySelector('.form__tarif-wrapper')
-elBtnTarif.addEventListener('click', () => {
-    elBtnTarif.classList.toggle('btn__radius');
-    elTarifWrapper.classList.toggle('tarif__active');
-});
+// let elBtnTarif = document.querySelector('.form__btn-tarif')
+// let elTarifWrapper = document.querySelector('.form__tarif-wrapper')
+// elBtnTarif.addEventListener('click', () => {
+//     elBtnTarif.classList.toggle('btn__radius');
+//     elTarifWrapper.classList.toggle('tarif__active');
+// });
 
 
 // =======================================
 
 // ===================================
-let sizes = [25, 30, 35];
-let elTarifInfo = document.querySelector('.tarif__info')
-for (let i = 0; i < sizes.length; i++) {
-    let elSizeLabel = document.createElement('label');
-    let elSizeInput = document.createElement('input');
-    let elNarhSpan = document.createElement('span');
-    let elSizeSpan = document.createElement('span');
+// let sizes = [25, 30, 35];
+// let elTarifInfo = document.querySelector('.tarif__info')
+// for (let i = 0; i < sizes.length; i++) {
+//     let elSizeLabel = document.createElement('label');
+//     let elSizeInput = document.createElement('input');
+//     let elNarhSpan = document.createElement('span');
+//     let elSizeSpan = document.createElement('span');
   
-    elSizeInput.type = 'radio';
-    elSizeInput.name = 'size';
-    elSizeInput.classList.add('size-radio', 'js-size-radio');
-    elSizeInput.value = sizes[i];
+//     elSizeInput.type = 'radio';
+//     elSizeInput.name = 'size';
+//     elSizeInput.classList.add('size-radio', 'js-size-radio');
+//     elSizeInput.value = sizes[i];
   
-    elNarhSpan.textContent = `${sizes[i]} 0,00 cm`;
+//     elNarhSpan.textContent = `${sizes[i]} 0,00 cm`;
   
-    elSizeInput.addEventListener('change', function () {
-        elTarifInfo.textContent = this.value;
-    });
+//     elSizeInput.addEventListener('change', function () {
+//         elTarifInfo.textContent = this.value;
+//     });
   
-    elSizeLabel.append(elNarhSpan,elSizeInput, elSizeSpan);
-    elTarifWrapper.appendChild(elSizeLabel);
-  }
+//     elSizeLabel.append(elNarhSpan,elSizeInput, elSizeSpan);
+//     elTarifWrapper.appendChild(elSizeLabel);
+//   }
 
 
 
@@ -70,43 +70,43 @@ for (let i = 0; i < sizes.length; i++) {
 
 
 
-// ======================================
+// // ======================================
 
-// ==================================
-let elSlider = document.querySelector('.slider')
-const imgs = document.getElementById('imgs')
-const leftBtn = document.getElementById('left')
-const rightBtn = document.getElementById('right')
+// // ==================================
+// let elSlider = document.querySelector('.slider')
+// const imgs = document.getElementById('imgs')
+// const leftBtn = document.getElementById('left')
+// const rightBtn = document.getElementById('right')
 
-const img = document.querySelectorAll('#imgs img')
+// const img = document.querySelectorAll('#imgs img')
 
-let idx = 0
+// let idx = 0
 
-function run() {
-    idx++
-    changeImage()
-}
+// function run() {
+//     idx++
+//     changeImage()
+// }
 
-function changeImage() {
-    if(idx > img.length - 1) {
-        idx = 0
-    } else if(idx < 0) {
-        idx = img.length - 1
-    }
+// function changeImage() {
+//     if(idx > img.length - 1) {
+//         idx = 0
+//     } else if(idx < 0) {
+//         idx = img.length - 1
+//     }
 
-    imgs.style.transform = `translateX(${-idx * 220}px)`
-}
+//     imgs.style.transform = `translateX(${-idx * 220}px)`
+// }
 
 
-rightBtn.addEventListener('click', () => {
-    idx++
-    changeImage()
-})
+// rightBtn.addEventListener('click', () => {
+//     idx++
+//     changeImage()
+// })
 
-leftBtn.addEventListener('click', () => {
-    idx--
-    changeImage()
-})
+// leftBtn.addEventListener('click', () => {
+//     idx--
+//     changeImage()
+// })
 // ======================================
 
 
