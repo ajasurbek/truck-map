@@ -2335,7 +2335,70 @@ header {
   }
 }
 
-@media screen and (max-width: 1390px) {
+@media screen and (max-width: 1370px) {
+  .deliver__cities {
+    margin-top: 63px;
+  }
+  .cities__fergana {
+    margin-left: 110px;
+  }
+  .cities__andijan {
+    margin-left: 220px;
+  }
+  .cities__namangan {
+    margin-left: 130px;
+  }
+  .cities__tashkent {
+    margin-left: 108px;
+  }
+  .cities__samarqand {
+    margin-left: 115px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .deliver__cities {
+    margin-top: 58px;
+  }
+  .cities__fergana {
+    margin-left: 110px;
+  }
+  .cities__andijan {
+    margin-left: 220px;
+  }
+  .cities__namangan {
+    margin-left: 125px;
+  }
+  .cities__tashkent {
+    margin-left: 108px;
+  }
+  .cities__samarqand {
+    margin-left: 110px;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .deliver__cities {
+    margin-top: 58px;
+  }
+  .cities__fergana {
+    margin-left: 110px;
+  }
+  .cities__andijan {
+    margin-left: 210px;
+  }
+  .cities__namangan {
+    margin-left: 122px;
+  }
+  .cities__tashkent {
+    margin-left: 108px;
+  }
+  .cities__samarqand {
+    margin-left: 110px;
+  }
+}
+
+@media screen and (max-width: 1310px) {
   .deliver {
     display: none;
   }
@@ -3989,7 +4052,7 @@ input[type="submit"] {
 .bag-filter_block3_right {
   display: -webkit-box;
   display: -ms-flexbox;
-  margin-right: 40px;
+  margin-right: 110px;
   display: flex;
   color: #233240;
   position: relative;

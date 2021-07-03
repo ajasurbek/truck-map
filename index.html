@@ -359,7 +359,7 @@
                         </div>
                       </div>
                       <div class="slider_pickup">
-                        <div class="item">
+                        <!-- <div class="item">
                           <div class="slider_slider_block  cars" data-language="uz"
                                data-options='${JSON.stringify(tariff.Tarif)}'
                                data-id=${tariff.Id} data-current=${i}>
@@ -371,16 +371,14 @@
                                           </div>
                                   </div>
                               </div>
-                              <!-- Blocks For Send Text pickapp list  -->
                               <div class="text_list_for_pic" style="display: none;">
                                   <p>${tariff.izox}</p>
                               </div>
-                              <!-- Price number Tarif -->
                               <span style="display: none;" class="price_tarifff">10000</span>
                               <span style="display: none;" class="default_price">5000</span>
                               <span style="display: none;" class="default_distance">2</span>
                           </div>
-                      </div>
+                      </div> -->
                         
                       </div>
                       <!-- **************************************************** -->
@@ -451,8 +449,7 @@
                         <div class="check_box"></div>
                       </span>
                       <span style="padding: 8px;">
-                        <a class="btn-link" style="color: #233240;text-decoration: underline!important;" target="_blank"
-                          href="#"> Shartlarni </a>
+                        <span class="btn-link" style="color: #233240;text-decoration: underline!important;"> Shartlarni </span>
                         qabul qilaman
                       </span>
                     </div>
@@ -744,10 +741,10 @@ elChange.addEventListener("click", function() {
           swal("Xato!", "Vaqtni tanlang!", "error");
           isSuccess = false
         }
-        // if (car_type_id === "") {
-        //   swal("Xato!", "Transportni tanlang!", "error");
-        //   isSuccess = false
-        // }
+        if (car_type_id === "") {
+          swal("Xato!", "Transportni tanlang!", "error");
+          isSuccess = false
+        }
         // if (tarif_id === "") {
         //   swal("Xato!", "Tarifni tanlang!", "error");
         //   isSuccess = false
@@ -759,7 +756,7 @@ elChange.addEventListener("click", function() {
         if (phone === "" || phone.length !== 13) {
           swal("Xato!", "Telefon raqamni kiriting!", "error");
           isSuccess = false
-        } else {
+        }  else {
           swal("Xato!", "Shartlarni qabul qilmadingiz!", "error");
         }
         // http://www.labbay-delivery.uz/logistika/web/add_order.php
@@ -819,28 +816,28 @@ elChange.addEventListener("click", function() {
   });
 
   // ===================================
-  let sizes = [25, 30, 35];
-  let elTarifInfo = document.querySelector('.tarif__info')
-  for (let i = 0; i < sizes.length; i++) {
-    let elSizeLabel = document.createElement('label');
-    let elSizeInput = document.createElement('input');
-    let elNarhSpan = document.createElement('span');
-    let elSizeSpan = document.createElement('span');
+  // let sizes = [25, 30, 35];
+  // let elTarifInfo = document.querySelector('.tarif__info')
+  // for (let i = 0; i < sizes.length; i++) {
+  //   let elSizeLabel = document.createElement('label');
+  //   let elSizeInput = document.createElement('input');
+  //   let elNarhSpan = document.createElement('span');
+  //   let elSizeSpan = document.createElement('span');
 
-    elSizeInput.type = 'radio';
-    elSizeInput.name = 'size';
-    elSizeInput.classList.add('size-radio', 'js-size-radio');
-    elSizeInput.value = sizes[i];
+  //   elSizeInput.type = 'radio';
+  //   elSizeInput.name = 'size';
+  //   elSizeInput.classList.add('size-radio', 'js-size-radio');
+  //   elSizeInput.value = sizes[i];
 
-    elNarhSpan.textContent = `${sizes[i]} 0,00 cm`;
+  //   elNarhSpan.textContent = `${sizes[i]} 0,00 cm`;
 
-    elSizeInput.addEventListener('change', function () {
-      elTarifInfo.textContent = this.value;
-    });
+  //   elSizeInput.addEventListener('change', function () {
+  //     elTarifInfo.textContent = this.value;
+  //   });
 
-    elSizeLabel.append(elNarhSpan, elSizeInput, elSizeSpan);
-    elTarifWrapper.appendChild(elSizeLabel);
-  }
+  //   elSizeLabel.append(elNarhSpan, elSizeInput, elSizeSpan);
+  //   elTarifWrapper.appendChild(elSizeLabel);
+  // }
 
 
 
