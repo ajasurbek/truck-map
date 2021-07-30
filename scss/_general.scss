@@ -8,6 +8,7 @@ html {
   box-sizing: inherit;
 }
 
+
 body {
   display: flex;
   flex-direction: column;
@@ -35,4 +36,31 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  background-image: url('../img/up-arrow.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 4px;
+}
+.ssa {
+  background-color: #fff;
+  fill: #fff;
+  color: #fff;
+}
+#myBtn:hover {
+  background-color: #2dc997;
 }

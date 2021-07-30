@@ -4,13 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Truck new</title>
+  <title>Truck</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
   <link rel="stylesheet" href="css/main.css">
   
 </head>
 
 <body class="body  body--nojs">
+
   <header class="header header--nojs header__truck">
 
     <div class="container header__container header__bottom">
@@ -27,13 +37,13 @@
             <a class="header__link active" href="#">Bosh sahifa</a>
           </li>
           <li class="header__item">
+            <a class="header__link" href="#Buyurma__sec">Buyurtma berish</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Korporativ buyurtma</a>
+          </li>
+          <li class="header__item">
             <a class="header__link" href="#">Haydovchilar uchun</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Biznes uchun</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Chet elga yuk tashish</a>
           </li>
         </ul>
       </div>
@@ -42,7 +52,7 @@
         <form class="form__search" action="https://echo.htmlacademy.ru" method="post">
           <input class="search__form" type="text" placeholder="Поиск">
         </form>
-        <a class="header__link-phone" href="tel:1055">1055</a>
+        <a class="header__link-phone" href="tel:+998742240606">Aloqa uchun</a>
         <div class="header__buttons">
           <button class="header__button">
             uz
@@ -222,7 +232,7 @@
           <div class="deliver__line line-blacks"></div>
           <div class="deliver__line line-blacks"></div>
           <div class="deliver__line line-blacks"></div>
-          <img src="img/car.svg" alt="car" class="deliver__img">
+          <!-- <img src="img/car.svg" alt="car" class="deliver__img"> -->
           <div class="deliver__circle deliver__circle-first">
             <div class="deliver__circle-black deliver__circle-black-first"></div>
           </div>
@@ -256,12 +266,13 @@
           <div class="deliver__line line__sixth"></div>
         </div>
         <div class="deliver__cities">
-          <h4 class="deliver__cities-heading cities__fergana">
-            Farg`ona
-          </h4>
           <h4 class="deliver__cities-heading cities__andijan">
             Andijon
           </h4>
+          <h4 class="deliver__cities-heading cities__fergana">
+            Farg`ona
+          </h4>
+          
           <h4 class="deliver__cities-heading cities__namangan">
             Namangan
           </h4>
@@ -276,7 +287,7 @@
     </section> <!-- End of deliver -->
 
 
-    <section class="bag-map_instruction">
+    <section class="bag-map_instruction" style="display: none;" id="Buyurma__sec">
       <div class="container bag-map_instruction-container">
         
             <form action="/mainform" method="post" class="bag-form">
@@ -313,10 +324,6 @@
                     <input type="text" tabindex=2 id="destination-input" onchange="changed()" class="input__form input__where-second adresss2 controls"
                       name="to" placeholder="Qayerga?">
                   </div>
-  
-  
-  
-  
   
   
                 </div>
@@ -627,13 +634,28 @@
 
   <!-- ============================================== -->
 <div class="so"></div>
-
-
-
-
-
-
-
+<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
   <!-- ======================= -->
   <script>
 let elChange = document.querySelector('.bag_img-arrow')

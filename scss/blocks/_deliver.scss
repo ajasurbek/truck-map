@@ -37,6 +37,7 @@
 .deliver__cities {
     display: flex;
     position: relative;
+    justify-content: space-around;
     margin-top: 70px;
     padding-bottom: 150px;
 }
@@ -47,24 +48,14 @@
     background: rgb(253, 254, 255);
 }
 
-// .deliver__blue {
-    //     margin-right: 25px;
-    //     width: 30px;
-    //     height: 5px;
-    //     background: rgb(253, 254, 255);
-    
-    //     animation-name: change__blue;
-    //     animation-timing-function: linear;
-    //     animation-duration: 15s;
-    //     animation-delay: 1s;
-    // }
+
     
     .line-blacks {
         width: 30px;
         height: 5px;
         background: rgb(253, 254, 255);
         
-        animation-name: change__black;
+        
         animation-timing-function: linear;
         animation-duration: 17s;
         animation-delay: 1s;
@@ -75,7 +66,7 @@
         height: 5px;
         background: rgb(253, 254, 255);
         
-        animation-name: change__third;
+        
         animation-timing-function: linear;
         animation-duration: 17s;
         animation-delay: 38s;
@@ -86,33 +77,19 @@
         height: 5px;
         background: rgb(253, 254, 255);
         
-        animation-name: change__fourth;
-        animation-timing-function: linear;
-        animation-duration: 17s;
-        animation-delay: 56s;
-        animation-fill-mode: forwards;
+        
     }
     .line-fiveth {
         width: 30px;
         height: 5px;
         background: rgb(253, 254, 255);
-        
-        animation-name: change__fiveth;
-        animation-timing-function: linear;
-        animation-duration: 17s;
-        animation-delay: 73s;
-        animation-fill-mode: forwards;
+       
     }
     .line__sixth {
         width: 30px;
         height: 5px;
         background: rgb(253, 254, 255);
         
-        animation-name: change__sixth;
-        animation-timing-function: linear;
-        animation-duration: 17s;
-        animation-delay: 93s;
-        animation-fill-mode: forwards;
     }
     
     .line-red {
@@ -121,283 +98,21 @@
         height: 5px;
         background: rgb(253, 254, 255);
         
-        animation-name: change__third;
-        animation-timing-function: linear;
-        animation-duration: 17s;
-        animation-delay: 19s;
-        animation-fill-mode: forwards;
     }
-    .deliver__circle-first {
-        animation-name: deliver__circle-first;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 14s;
-        animation-fill-mode: forwards;
-    }
-    .deliver__circle-black-first {
-        animation-name: deliver__circle-black-first;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 14s;
-        animation-fill-mode: forwards;
-    }
-
-    .deliver__circle-second {
-        animation-name: deliver__circle-second;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 28s;
-        animation-fill-mode: forwards;
-    }
-    .deliver__circle-black-second {
-        animation-name: deliver__circle-black-second;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 28s;
-        animation-fill-mode: forwards;
-    }
-
-    .deliver__circle-third {
-        animation-name: deliver__circle-third;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 44s;
-        animation-fill-mode: forwards;
-    }
-    .deliver__circle-black-third {
-        animation-name: deliver__circle-black-third;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 44s;
-        animation-fill-mode: forwards;
-    }
-
-    .deliver__circle-four {
-        animation-name: deliver__circle-four;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 63s;
-        animation-fill-mode: forwards;
-    }
-    .deliver__circle-black-four {
-        animation-name: deliver__circle-black-four;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 63s;
-        animation-fill-mode: forwards;
-    }
-
-    .deliver__circle-five {
-        animation-name: deliver__circle-five;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 80s;
-        animation-fill-mode: forwards;
-    }
-    .deliver__circle-black-five {
-        animation-name: deliver__circle-black-five;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 80s;
-        animation-fill-mode: forwards;
-    }
+  
 
 
-    // .deliver__circle {
-    //     background-color: #fff;
-    // }
-    // .deliver__circle-black {
-    //     width: 16px;
-    //     height: 16px;
-    //     border-radius: 50%;
-    //     background: #1E2E3D;
-    // }
-    @keyframes deliver__circle-first {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 50px;
-            background: #1E2E3D;;
-        }
-    }
-    @keyframes deliver__circle-black-first {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 50px;
-            background-color: rgb(255, 255, 255);
-        }
-    }
-
-
-    @keyframes deliver__circle-second {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 50px;
-            background: #1E2E3D;;
-        }
-    }
-    @keyframes deliver__circle-black-second {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 50px;
-            background-color: rgb(255, 255, 255);
-        }
-    }
-
-
-
-    @keyframes deliver__circle-third {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 50px;
-            background: #1E2E3D;;
-        }
-    }
-    @keyframes deliver__circle-black-third {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 50px;
-            background-color: rgb(255, 255, 255);
-        }
-    }
-
-    @keyframes deliver__circle-four {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 50px;
-            background: #1E2E3D;;
-        }
-    }
-    @keyframes deliver__circle-black-four {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 50px;
-            background-color: rgb(255, 255, 255);
-        }
-    }
-    @keyframes deliver__circle-five {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 50px;
-            background: #1E2E3D;;
-        }
-    }
-    @keyframes deliver__circle-black-five {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 50px;
-            background-color: rgb(255, 255, 255);
-        }
-    }
-
-    @keyframes change__blue {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 340px;
-            background-color: rgb(54, 248, 6);
-        }
-    }
-    
-    @keyframes change__red {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 300px;
-            background-color: rgb(0, 0, 0);
-        }
-    }
-    @keyframes change__third {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 300px;
-            background-color: rgb(0, 0, 0);
-        }
-    }
-    
-    @keyframes change__fourth {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 300px;
-            background-color: rgb(0, 0, 0);
-        }
-    }
-    @keyframes change__fiveth {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 300px;
-            background-color: rgb(0, 0, 0);
-        }
-    }
-    @keyframes change__sixth {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 340px;
-            background-color: rgb(0, 0, 0);
-        }
-    }
-    
-    @keyframes change__black {
-        0% {
-            left: 0;
-        }
-        100%{
-            left: 300px;
-            background-color: rgb(0, 0, 0);
-        }
-    }
+ 
     
     
     .deliver__img {
         width: 200px;
         height: 185px;
         position: absolute;
-        
-        animation-name: car__drive;
-        animation-timing-function: linear;
-        animation-duration: 100s;
-        animation-delay: 3s;
-        animation-iteration-count: infinite;
+        left: 50px;
     }
     
-    @keyframes car__drive {
-        0% {
-            left: 20px;
-        }
-        100%{
-            left: 1280px;
-        }
-    }
-    
+  
     
     .deliver__cities-heading {
         font-style: normal;
@@ -406,21 +121,22 @@
         line-height: 31px;
         color: #1E2E3D;
     }
-    .cities__fergana {
-        margin-left: 140px;
-    }
-    .cities__andijan {
-        margin-left: 215px;
-    }
-    .cities__namangan {
-        margin-left: 140px;
-    }
-    .cities__tashkent {
-        margin-left: 125px;
-    }
-    .cities__samarqand {
-        margin-left: 130px;
-    }
+    // .cities__fergana {
+    //     margin-left: 215px;
+       
+    // }
+    // .cities__andijan {
+    //     margin-left: 140px;
+    // }
+    // .cities__namangan {
+    //     margin-left: 140px;
+    // }
+    // .cities__tashkent {
+    //     margin-left: 125px;
+    // }
+    // .cities__samarqand {
+    //     margin-left: 130px;
+    // }
 
     @media screen and (max-width: 1480px) {
         @keyframes car__drive {

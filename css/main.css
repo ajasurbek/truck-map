@@ -440,6 +440,35 @@ img {
   height: auto;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  background-image: url("../img/up-arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.ssa {
+  background-color: #fff;
+  fill: #fff;
+  color: #fff;
+}
+
+#myBtn:hover {
+  background-color: #2dc997;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -473,12 +502,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 38px;
+  padding-bottom: 38px;
 }
 
 .header__logo {
-  padding-right: 60px;
+  padding-right: 40px;
 }
 
 .header__list {
@@ -493,7 +522,7 @@ header {
 }
 
 .header__item {
-  padding-right: 60px;
+  padding-right: 50px;
 }
 
 .header__link {
@@ -541,7 +570,7 @@ header {
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
-  padding-left: 27px;
+  margin-left: 27px;
   margin-right: 25px;
   color: #EECE21;
 }
@@ -581,12 +610,12 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 1415px) {
+@media screen and (max-width: 1434px) {
   .header-logo {
-    padding-right: 40px;
+    padding-right: 35px;
   }
   .header__item {
-    padding-right: 40px;
+    padding-right: 35px;
   }
 }
 
@@ -602,7 +631,28 @@ header {
           align-items: center;
 }
 
-@media screen and (max-width: 1335px) {
+@media screen and (max-width: 1374px) {
+  .header-logo {
+    padding-right: 30px;
+  }
+  .header__item {
+    padding-right: 30px;
+  }
+}
+
+.header__nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1355px) {
   .header__container {
     padding-top: 23px;
     padding-bottom: 23px;
@@ -619,8 +669,8 @@ header {
     margin-left: 25px;
   }
   .search__form {
-    width: 200px;
-    height: 38px;
+    width: 170px;
+    height: 35px;
   }
   .header__button-toggler {
     display: block;
@@ -820,7 +870,7 @@ header {
 }
 
 .intro {
-  background: url("../../img/intro-bg.svg");
+  background: url("../../img/slider_car2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -870,7 +920,7 @@ header {
 
 @media screen and (max-width: 1340px) {
   .intro {
-    background: url("../../img/intro-opacity.svg");
+    background: url("../../img/slider_car2.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -888,6 +938,10 @@ header {
     padding-top: 122px;
     margin-bottom: 52px;
   }
+  .intro__titles {
+    font-size: 50px;
+    margin-bottom: 52px;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -895,33 +949,96 @@ header {
     max-width: 279px;
     font-size: 35px;
     line-height: 48px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 72px;
-    padding-bottom: 72px;
-    margin-bottom: 15px;
+    margin-left: 80px;
+    padding-top: 52px;
+    margin-bottom: 75px;
   }
-  .intro {
-    background: none;
+  .intro__title {
+    font-size: 40px;
+    margin-bottom: 52px;
+    padding: 0;
   }
   .intro__titles {
-    display: none;
+    margin-left: 80px;
+    font-size: 35px;
+    margin-top: 100px;
+    padding-top: 100px;
+    line-height: 48px;
+    margin-bottom: 52px;
+    padding-bottom: 100px;
   }
-  .intro__color {
-    background-color: #1E2E3D;
+}
+
+@media screen and (max-width: 535px) {
+  .intro__heading {
+    max-width: 279px;
+    font-size: 30px;
+    line-height: 48px;
+    margin-left: 50px;
+    padding-top: 52px;
+    margin-bottom: 75px;
+  }
+  .intro__title {
+    font-size: 30px;
+    margin-bottom: 52px;
+    padding: 0;
+  }
+  .intro__titles {
+    margin-left: 50px;
+    font-size: 30px;
+    margin-top: 100px;
+    padding-top: 100px;
+    margin-bottom: 52px;
+    padding-bottom: 100px;
+  }
+  .intro__title-yellow {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .intro__heading {
+    max-width: 279px;
+    font-size: 30px;
+    margin-left: 0;
+    line-height: 48px;
+    padding-top: 52px;
+    margin-bottom: 75px;
+  }
+  .intro__title-yellow {
+    font-size: 35px;
+  }
+  .intro__titles {
+    margin-left: 0;
+    font-size: 30px;
+    margin-top: 100px;
+    padding-top: 100px;
+    margin-bottom: 52px;
+    padding-bottom: 100px;
+  }
+  .intro__title {
+    width: 430px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .intro__heading {
+    font-size: 28px;
+  }
+  .intro__titles {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .intro__title {
+    font-size: 28px;
+    line-height: 35px;
+    width: 300px;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .intro__heading {
-    max-width: 237px;
+  .intro__title-yellow {
     font-size: 30px;
-    line-height: 42px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 55px;
-    padding-bottom: 62px;
-    margin-bottom: 15px;
   }
 }
 
@@ -1624,6 +1741,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 70px;
   padding-bottom: 150px;
 }
@@ -1638,8 +1757,6 @@ header {
   width: 30px;
   height: 5px;
   background: #fdfeff;
-  -webkit-animation-name: change__black;
-          animation-name: change__black;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-duration: 17s;
@@ -1654,8 +1771,6 @@ header {
   width: 30px;
   height: 5px;
   background: #fdfeff;
-  -webkit-animation-name: change__third;
-          animation-name: change__third;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-duration: 17s;
@@ -1670,48 +1785,18 @@ header {
   width: 30px;
   height: 5px;
   background: #fdfeff;
-  -webkit-animation-name: change__fourth;
-          animation-name: change__fourth;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 17s;
-          animation-duration: 17s;
-  -webkit-animation-delay: 56s;
-          animation-delay: 56s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .line-fiveth {
   width: 30px;
   height: 5px;
   background: #fdfeff;
-  -webkit-animation-name: change__fiveth;
-          animation-name: change__fiveth;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 17s;
-          animation-duration: 17s;
-  -webkit-animation-delay: 73s;
-          animation-delay: 73s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .line__sixth {
   width: 30px;
   height: 5px;
   background: #fdfeff;
-  -webkit-animation-name: change__sixth;
-          animation-name: change__sixth;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 17s;
-          animation-duration: 17s;
-  -webkit-animation-delay: 93s;
-          animation-delay: 93s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .line-red {
@@ -1719,520 +1804,13 @@ header {
   width: 30px;
   height: 5px;
   background: #fdfeff;
-  -webkit-animation-name: change__third;
-          animation-name: change__third;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 17s;
-          animation-duration: 17s;
-  -webkit-animation-delay: 19s;
-          animation-delay: 19s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.deliver__circle-first {
-  -webkit-animation-name: deliver__circle-first;
-          animation-name: deliver__circle-first;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.deliver__circle-black-first {
-  -webkit-animation-name: deliver__circle-black-first;
-          animation-name: deliver__circle-black-first;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.deliver__circle-second {
-  -webkit-animation-name: deliver__circle-second;
-          animation-name: deliver__circle-second;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 28s;
-          animation-delay: 28s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.deliver__circle-black-second {
-  -webkit-animation-name: deliver__circle-black-second;
-          animation-name: deliver__circle-black-second;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 28s;
-          animation-delay: 28s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.deliver__circle-third {
-  -webkit-animation-name: deliver__circle-third;
-          animation-name: deliver__circle-third;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 44s;
-          animation-delay: 44s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.deliver__circle-black-third {
-  -webkit-animation-name: deliver__circle-black-third;
-          animation-name: deliver__circle-black-third;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 44s;
-          animation-delay: 44s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.deliver__circle-four {
-  -webkit-animation-name: deliver__circle-four;
-          animation-name: deliver__circle-four;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 63s;
-          animation-delay: 63s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.deliver__circle-black-four {
-  -webkit-animation-name: deliver__circle-black-four;
-          animation-name: deliver__circle-black-four;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 63s;
-          animation-delay: 63s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.deliver__circle-five {
-  -webkit-animation-name: deliver__circle-five;
-          animation-name: deliver__circle-five;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 80s;
-          animation-delay: 80s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.deliver__circle-black-five {
-  -webkit-animation-name: deliver__circle-black-five;
-          animation-name: deliver__circle-black-five;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 80s;
-          animation-delay: 80s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes deliver__circle-first {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background: #1E2E3D;
-  }
-}
-
-@keyframes deliver__circle-first {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background: #1E2E3D;
-  }
-}
-
-@-webkit-keyframes deliver__circle-black-first {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background-color: white;
-  }
-}
-
-@keyframes deliver__circle-black-first {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background-color: white;
-  }
-}
-
-@-webkit-keyframes deliver__circle-second {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background: #1E2E3D;
-  }
-}
-
-@keyframes deliver__circle-second {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background: #1E2E3D;
-  }
-}
-
-@-webkit-keyframes deliver__circle-black-second {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background-color: white;
-  }
-}
-
-@keyframes deliver__circle-black-second {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background-color: white;
-  }
-}
-
-@-webkit-keyframes deliver__circle-third {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background: #1E2E3D;
-  }
-}
-
-@keyframes deliver__circle-third {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background: #1E2E3D;
-  }
-}
-
-@-webkit-keyframes deliver__circle-black-third {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background-color: white;
-  }
-}
-
-@keyframes deliver__circle-black-third {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background-color: white;
-  }
-}
-
-@-webkit-keyframes deliver__circle-four {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background: #1E2E3D;
-  }
-}
-
-@keyframes deliver__circle-four {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background: #1E2E3D;
-  }
-}
-
-@-webkit-keyframes deliver__circle-black-four {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background-color: white;
-  }
-}
-
-@keyframes deliver__circle-black-four {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background-color: white;
-  }
-}
-
-@-webkit-keyframes deliver__circle-five {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background: #1E2E3D;
-  }
-}
-
-@keyframes deliver__circle-five {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background: #1E2E3D;
-  }
-}
-
-@-webkit-keyframes deliver__circle-black-five {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background-color: white;
-  }
-}
-
-@keyframes deliver__circle-black-five {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50px;
-    background-color: white;
-  }
-}
-
-@-webkit-keyframes change__blue {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 340px;
-    background-color: #36f806;
-  }
-}
-
-@keyframes change__blue {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 340px;
-    background-color: #36f806;
-  }
-}
-
-@-webkit-keyframes change__red {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 300px;
-    background-color: black;
-  }
-}
-
-@keyframes change__red {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 300px;
-    background-color: black;
-  }
-}
-
-@-webkit-keyframes change__third {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 300px;
-    background-color: black;
-  }
-}
-
-@keyframes change__third {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 300px;
-    background-color: black;
-  }
-}
-
-@-webkit-keyframes change__fourth {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 300px;
-    background-color: black;
-  }
-}
-
-@keyframes change__fourth {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 300px;
-    background-color: black;
-  }
-}
-
-@-webkit-keyframes change__fiveth {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 300px;
-    background-color: black;
-  }
-}
-
-@keyframes change__fiveth {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 300px;
-    background-color: black;
-  }
-}
-
-@-webkit-keyframes change__sixth {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 340px;
-    background-color: black;
-  }
-}
-
-@keyframes change__sixth {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 340px;
-    background-color: black;
-  }
-}
-
-@-webkit-keyframes change__black {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 300px;
-    background-color: black;
-  }
-}
-
-@keyframes change__black {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 300px;
-    background-color: black;
-  }
 }
 
 .deliver__img {
   width: 200px;
   height: 185px;
   position: absolute;
-  -webkit-animation-name: car__drive;
-          animation-name: car__drive;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 100s;
-          animation-duration: 100s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes car__drive {
-  0% {
-    left: 20px;
-  }
-  100% {
-    left: 1280px;
-  }
-}
-
-@keyframes car__drive {
-  0% {
-    left: 20px;
-  }
-  100% {
-    left: 1280px;
-  }
+  left: 50px;
 }
 
 .deliver__cities-heading {
@@ -2241,26 +1819,6 @@ header {
   font-size: 22px;
   line-height: 31px;
   color: #1E2E3D;
-}
-
-.cities__fergana {
-  margin-left: 140px;
-}
-
-.cities__andijan {
-  margin-left: 215px;
-}
-
-.cities__namangan {
-  margin-left: 140px;
-}
-
-.cities__tashkent {
-  margin-left: 125px;
-}
-
-.cities__samarqand {
-  margin-left: 130px;
 }
 
 @media screen and (max-width: 1480px) {

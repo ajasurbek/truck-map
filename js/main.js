@@ -1,3 +1,6 @@
+console.log('saaaaaaaaaaaaaaaaaaaa')
+
+
 // $(document).ready(function () {
 
 
@@ -637,4 +640,11 @@ $('.text_tabs button').click(function (event) {
 
 
 });
+
+
+
+// =========================
+
+
+
 
